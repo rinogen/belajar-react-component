@@ -1,1 +1,5 @@
-export const items = ["First", "Second", "Third"];
+export const items = [
+    {title : "First"} , 
+    {title : "Second"}, 
+    {title : "Third"}
+    ];

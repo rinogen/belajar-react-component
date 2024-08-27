@@ -22,17 +22,18 @@ function App() {
 
   const [lists, setList] = useState(items);
   
-  const handleAddCard = () => {
-    setList([...lists, "New Added"]);
+  const handleAddItem = () => {
+    setList( lists => [...lists, 
+      {title : `New card ${lists.length + 1}`}]);
   };  
 
   return (
     <div style={containerStyle}>
       <h1>Task : Add three Card elements</h1>
       {lists.map((list, index) => (
-        <Box key={index} item={list} />
+        <Box key={index} item={list.title} />
       ))}
-      <Button text="Tambah Item" onClick={handleAddCard}></Button>
+      <Button text="Tambah Item" onClick={handleAddItem}></Button>
     </div>
   );
 }
