@@ -11,7 +11,7 @@
 // 10. Upload tugasnya ke akun github masing-masing, dan kirimkan link repo-nya
 
 import { useState } from "react";
-import { Box } from "./components/Box";
+import { Card } from "./components/Box";
 import { items } from "./constants/items";
 import Button from "./components/Button";
 
@@ -31,7 +31,7 @@ function App() {
     <div style={containerStyle}>
       <h1>Task : Add three Card elements</h1>
       {lists.map((list, index) => (
-        <Box key={index} item={list.title} />
+        <Card key={index} item={list.title} />
       ))}
       <Button text="Tambah Item" onClick={handleAddItem}></Button>
     </div>

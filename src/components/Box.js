@@ -1,4 +1,4 @@
-export function Box(props) {
+export function Card(props) {
     const boxStyle = {
       border: "2px solid gray",
       borderRadius: "10px",
