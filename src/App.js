@@ -32,7 +32,7 @@ function App() {
       {lists.map((list, index) => (
         <Box key={index} item={list} />
       ))}
-      <Button text="Tambah Card" onClick={handleAddCard}></Button>
+      <Button text="Tambah Item" onClick={handleAddCard}></Button>
     </div>
   );
 }
